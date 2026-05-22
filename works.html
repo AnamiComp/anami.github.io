@@ -14,80 +14,59 @@ padding:0;
 
 
 /* 上の黄色バー */
-
 .topbar{
-
 background:#f2cf43;
-
-height:38px;
-
+height:42px;
 border-top:3px solid black;
 border-bottom:3px solid black;
-
 display:flex;
-
 justify-content:flex-end;
-
 align-items:center;
-
 padding-right:30px;
-
 gap:25px;
-
 font-weight:900;
-
 font-size:14px;
-
 }
-
 .topbar a{
-
 color:black;
-
 text-decoration:none;
-
 }
-
 .topbar a:hover{
-
 opacity:.6;
-
+}
+.close{
+width:24px;
+height:24px;
+border:3px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:900;
+font-size:14px;
+line-height:1;
+box-sizing:border-box;
 }
 
 
 /* タイトル */
-
 h1{
-
 font-size:110px;
-
 font-weight:900;
-
 letter-spacing:-5px;
-
 color:white;
-
 margin:40px 50px;
-
 line-height:.9;
-
 }
 
 
 
 /* ギャラリー */
-
 .gallery{
-
 display:grid;
-
 grid-template-columns:
 repeat(auto-fill,minmax(220px,1fr));
-
 gap:35px;
-
 padding:0 50px 80px;
-
 }
 
 
@@ -95,69 +74,48 @@ padding:0 50px 80px;
 /* ポスターカード */
 
 .card{
-
 aspect-ratio:2/3;
-
 overflow:hidden;
-
 background:white;
-
 cursor:pointer;
-
 transition:.25s;
-
 border:3px solid black;
-
 }
 
-
 .card:hover{
-
 transform:
 translateY(-8px)
 rotate(-1deg);
-
 }
 
 
 
 /* 画像 */
-
 .card img{
-
 width:100%;
 height:100%;
-
 object-fit:cover;
-
 display:block;
-
 }
 
 
 
-/* トリミング調整 */
-
+/* 画像トリミング調整 */
 .right img{
 object-position:right center;
 }
-
 .right2 img{
 object-position:84% center;
 }
-
 .right3 img{
 object-position:89% center;
 }
-
 .left img{
 object-position:left center;
 }
-
 .left2 img{
 object-position:20% center;
 }
-
 
 </style>
 </head>
@@ -171,7 +129,7 @@ object-position:20% center;
 
 <a href="works.html">WORKS</a>
 
-✕
+<div class="close">✕</div>
 
 </div>
 

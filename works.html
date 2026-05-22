@@ -4,33 +4,64 @@
 <title>Works</title>
 
 <style>
+
 body{
 background:#f3f3f3;
-margin:0;
 font-family:Arial;
+margin:0;
 padding:50px;
 }
 
 h1{
-font-size:50px;
+font-size:60px;
+margin-bottom:50px;
+color:#111;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+
+grid-template-columns:
+repeat(auto-fill,minmax(300px,1fr));
+
+gap:25px;
 }
 
-.gallery img{
-width:100%;
-border-radius:10px;
+.card{
+
+height:260px;
+
+overflow:hidden;
+
+border-radius:15px;
+
+background:white;
+
 transition:.3s;
+
+cursor:pointer;
 }
 
-.gallery img:hover{
-transform:scale(1.03);
+.card:hover{
+
+transform:translateY(-8px);
+
 }
+
+.card img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+}
+
 </style>
+
 </head>
 
 <body>
@@ -39,7 +70,77 @@ transform:scale(1.03);
 
 <div class="gallery">
 
-<img src="01_BluePiriod.jpg">
+<div class="card">
+<img src="2025/2025_01_GANNIBAL.jpeg">
+</div>
+
+<div class="card">
+<img src="2025/2025_02_Dead or Love.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_03_Expo 2025.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_04_Angel&Devil.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_05_BABELnoTHO.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_06_Catching the.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_07_GlassHeart.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_08_FakingBeethoven.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_09_ROHTO.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_10_HachaMecha.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_11_LastSamuraiStanding.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_12_BREAKitDOWN.jpg">
+</div>
+
+<div class="card">
+<img src="2025/2025_13_QOM.jpg">
+</div>
+
+<div class="card">
+<img src="2026/2026_01_KyojoReUnion.jpg">
+</div>
+
+<div class="card">
+<img src="2026/2026_02_TYTM.jpg">
+</div>
+
+<div class="card">
+<img src="2026/2026_03_KyojoReQuiem.jpg">
+</div>
+
+<div class="card">
+<img src="2026/2026_04_Yorushika.jpg">
+</div>
+
+<div class="card">
+<img src="2026/2026_05_HxN.jpg">
+</div>
 
 </div>
 

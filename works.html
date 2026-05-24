@@ -111,7 +111,7 @@ object-position:7% center;
 
 .filter{
 display:flex;
-gap:8px;
+gap:18px;
 padding:0 50px 40px;
 flex-wrap:wrap;
 font-weight:900;
@@ -149,7 +149,7 @@ color:#f2cf43;
 <h1>WORKS</h1>
 
 <div class="filter">
-<button onclick="filterSelection('all')">ALL</button>
+<button class="active"onclick="filterSelection('all')">ALL</button>
 <button onclick="filterSelection('film')">FILM</button>
 <button onclick="filterSelection('episodic')">EPISODIC</button>
 <button onclick="filterSelection('music')">MUSIC VIDEO</button>
@@ -201,6 +201,11 @@ color:#f2cf43;
 <script>
 function filterSelection(category){
 let cards=document.querySelectorAll(".card");
+let buttons=document.querySelectorAll(".filter button");
+buttons.forEach(button=>{
+button.classList.remove("active");
+});
+event.target.classList.add("active");
 cards.forEach(card=>{
 if(category==="all"){
 card.style.display="block";
@@ -214,7 +219,7 @@ card.style.display="none";
 });
 }
 </script>
-
+  
 </body>
 
 </html>

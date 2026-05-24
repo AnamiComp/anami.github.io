@@ -1,36 +1,255 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <title>GlassHeart</title>
 
 <style>
 
 body{
 background:#d4d4d4;
-font-family:Arial;
-padding:50px;
+font-family:Arial,sans-serif;
+margin:0;
+padding-top:42px;
 }
 
+/* 上固定バー */
+
+.topbar{
+
+background:#f2cf43;
+
+height:42px;
+
+border-top:3px solid black;
+border-bottom:3px solid black;
+
+display:flex;
+
+justify-content:flex-end;
+
+align-items:center;
+
+padding-right:30px;
+
+gap:25px;
+
+font-weight:900;
+
+font-size:14px;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:100;
+
+box-sizing:border-box;
+
+}
+
+.topbar a{
+
+color:black;
+
+text-decoration:none;
+
+}
+
+.topbar a:hover{
+
+opacity:.6;
+
+}
+
+.close{
+
+width:26px;
+
+height:26px;
+
+border:3px solid black;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:22px;
+
+font-weight:900;
+
+line-height:.7;
+
+box-sizing:border-box;
+
+}
+
+
+
+/* メイン */
+
+.container{
+
+padding:60px;
+
+max-width:1000px;
+
+}
+
+
+
+/* タイトル */
+
 h1{
+
 font-size:90px;
+
+margin:0;
+
+font-weight:900;
+
+letter-spacing:-4px;
+
+line-height:.9;
+
+color:white;
+
+}
+
+.jp{
+
+font-size:20px;
+
+font-weight:900;
+
+margin-top:10px;
+
+margin-bottom:50px;
+
+}
+
+
+
+/* 情報 */
+
+.info{
+
+font-size:15px;
+
+font-weight:900;
+
+line-height:2;
+
+margin-bottom:50px;
+
+}
+
+
+
+/* ボタン */
+
+.buttons{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+border:3px solid black;
+
+padding:14px 20px;
+
+background:white;
+
+text-decoration:none;
+
+color:black;
+
+font-weight:900;
+
+display:inline-block;
+
+transition:.2s;
+
+}
+
+.btn:hover{
+
+background:#f2cf43;
+
+transform:translateY(-3px);
+
 }
 
 </style>
-
 </head>
 
 <body>
 
-<h1>GLASSHEART</h1>
+<div class="topbar">
 
-<p>NETFLIX</p>
+<a href="../index.html">HOME</a>
 
-<p>2025</p>
+<a href="../works.html">WORKS</a>
 
-<p>Compositor</p>
+<div class="close">✕</div>
+
+</div>
+
+
+
+<div class="container">
+
+<h1>GlassHeart</h1>
+
+<div class="jp">
+グラスハート
+</div>
+
+
+<div class="info">
+
+2025 Streaming<br>
+
+NETFLIX<br>
+
+KASSEN inc.
+
+</div>
+
+
+<div class="buttons">
+
+<a class="btn"
+href="https://www.netflix.com/title/81517368"
+target="_blank">
+
+OFFICIAL WEBSITE
+
+</a>
+
+
+<a class="btn"
+href="https://youtu.be/qZyFUM2rsrI?si=MNlW19duN-2WHWTi"
+target="_blank">
+
+OFFICIAL TEASER
+
+</a>
+
+</div>
+
+</div>
 
 </body>
-
 </html>

@@ -12,185 +12,128 @@ margin:0;
 padding-top:42px;
 }
 
+
 /* 上固定バー */
-
 .topbar{
-
 background:#f2cf43;
-
 height:42px;
-
 border-top:3px solid black;
 border-bottom:3px solid black;
-
 display:flex;
-
 justify-content:flex-end;
-
 align-items:center;
-
 padding-right:30px;
-
 gap:25px;
-
 font-weight:900;
-
 font-size:14px;
-
 position:fixed;
-
 top:0;
-
 left:0;
-
 width:100%;
-
 z-index:100;
-
 box-sizing:border-box;
-
 }
-
 .topbar a{
-
 color:black;
-
 text-decoration:none;
-
 }
-
 .topbar a:hover{
-
 opacity:.6;
-
 }
-
 .close{
-
 width:26px;
-
 height:26px;
-
 border:3px solid black;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 font-size:22px;
-
 font-weight:900;
-
 line-height:.7;
-
 box-sizing:border-box;
-
 }
 
 
-
-/* メイン */
-
+/* 本体 */
 .container{
-
 padding:60px;
-
 max-width:1000px;
-
 }
-
-
 
 /* タイトル */
-
 h1{
-
-font-size:90px;
-
+font-size:72px;
 margin:0;
-
 font-weight:900;
-
-letter-spacing:-4px;
-
-line-height:.9;
-
+letter-spacing:-3px;
+line-height:.95;
 color:white;
-
 }
-
 .jp{
-
-font-size:20px;
-
+font-size:12px;
 font-weight:900;
-
-margin-top:10px;
-
-margin-bottom:50px;
-
+margin-top:8px;
+margin-bottom:45px;
+opacity:.8;
 }
-
-
 
 /* 情報 */
-
 .info{
-
-font-size:15px;
-
+font-size:14px;
 font-weight:900;
-
 line-height:2;
-
-margin-bottom:50px;
-
+margin-bottom:35px;
 }
-
-
-
+.info div{
+margin-bottom:4px;
+}
+  
 /* ボタン */
-
 .buttons{
-
 display:flex;
-
-gap:15px;
-
-flex-wrap:wrap;
-
+gap:10px;
+margin-bottom:50px;
 }
-
 .btn{
-
 border:3px solid black;
-
-padding:14px 20px;
-
+padding:8px 14px;
 background:white;
-
 text-decoration:none;
-
 color:black;
-
 font-weight:900;
-
+font-size:12px;
 display:inline-block;
-
 transition:.2s;
-
 }
-
 .btn:hover{
-
 background:#f2cf43;
-
 transform:translateY(-3px);
-
 }
 
+/* youtube */
+.video{
+margin-top:40px;
+border:3px solid black;
+overflow:hidden;
+}
+.video iframe{
+width:100%;
+aspect-ratio:16/9;
+border:none;
+display:block;
+}
+.watch{
+margin-top:12px;
+font-size:12px;
+font-weight:900;
+display:inline-block;
+color:black;
+text-decoration:none;
+}
+.watch:hover{
+color:#f2cf43;
+}
+  
 </style>
 </head>
 
@@ -199,7 +142,6 @@ transform:translateY(-3px);
 <div class="topbar">
 
 <a href="../index.html">HOME</a>
-
 <a href="../works.html">WORKS</a>
 
 <div class="close">✕</div>
@@ -211,43 +153,34 @@ transform:translateY(-3px);
 <div class="container">
 
 <h1>GlassHeart</h1>
-
-<div class="jp">
-グラスハート
-</div>
-
+<div class="jp">グラスハート</div>
 
 <div class="info">
-
-2025 Streaming<br>
-
-NETFLIX<br>
-
-KASSEN inc.
-
+<div>2025</div>
+<div>Episodic on NETFLIX</div>
+<div>KASSEN inc.</div>
 </div>
 
 
 <div class="buttons">
-
 <a class="btn"
 href="https://www.netflix.com/title/81517368"
 target="_blank">
-
 OFFICIAL WEBSITE
-
 </a>
+</div>
 
+<div class="video">
+<iframe
+src="https://www.youtube.com/embed/qZyFUM2rsrI">
+</iframe></div>
 
-<a class="btn"
+<a
+class="watch"
 href="https://youtu.be/qZyFUM2rsrI?si=MNlW19duN-2WHWTi"
 target="_blank">
-
-OFFICIAL TEASER
-
+WATCH ON YOUTUBE →
 </a>
-
-</div>
 
 </div>
 

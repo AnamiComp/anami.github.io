@@ -125,12 +125,19 @@ font-weight:900;
 cursor:pointer;
 font-size:14px;
 font-family:inherit;
+-webkit-tap-highlight-color: transparent;
+outline: none;
+color: black;
 }
 .filter button:hover{
 opacity:.5;
 }
 .filter button.active{
 color:#f2cf43;
+}
+.filter button:focus,
+.filter button:active{
+  color: black;
 }
 
 a{

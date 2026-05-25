@@ -211,6 +211,7 @@ color:inherit;
 
 </div>
 
+  
 <script>
 function filterSelection(category){
 let cards=document.querySelectorAll(".card");
@@ -220,19 +221,18 @@ button.classList.remove("active");
 });
 event.target.classList.add("active");
 cards.forEach(card=>{
-if(category==="all"){
-card.style.display="block";
-}
-else if(card.classList.contains(category)){
-card.style.display="block";
-}
-else{
-card.style.display="none";
+if(category==="all" ||
+card.classList.contains(category)){
+card.parentElement.style.display="block";
+}else{
+card.parentElement.style.display="none";
 }
 });
 }
 </script>
+
   
 </body>
+  
 
 </html>

@@ -71,6 +71,8 @@ text-align:right;
 margin-top:10px;
 }
 
+/* 動画 */
+
 .video{
 border:3px solid black;
 overflow:hidden;
@@ -81,6 +83,38 @@ width:100%;
 aspect-ratio:16/9;
 border:none;
 display:block;
+}
+
+
+/* パスワード */
+
+.lockbox{
+border:3px solid black;
+padding:30px;
+display:inline-flex;
+gap:10px;
+align-items:center;
+margin-bottom:30px;
+font-weight:900;
+}
+
+.lockbox input{
+border:3px solid black;
+padding:8px;
+font-weight:900;
+background:white;
+}
+
+.lockbox button{
+border:3px solid black;
+background:none;
+padding:8px 14px;
+font-weight:900;
+cursor:pointer;
+}
+
+.lockbox button:hover{
+background:#f2cf43;
 }
 
 </style>
@@ -96,16 +130,80 @@ display:block;
 </div>
 
 <div class="container">
+
 <h1>REEL</h1>
+
+
+<div id="videoLock">
+
+<div class="lockbox">
+
+PASSWORD
+
+<input
+type="password"
+id="videoPassword">
+
+<button onclick="unlockVideo()">
+ENTER
+</button>
+
+</div>
+
+</div>
+
+
+<div
+id="realVideo"
+style="display:none;">
+
 <div class="video">
+
 <iframe
 src="https://player.vimeo.com/video/1190915325">
 </iframe>
+
 </div>
+
 <div class="info">
 Last Updated 2026/05/27
 </div>
+
 </div>
+
+</div>
+
+
+<script>
+
+function unlockVideo(){
+
+let pw=
+document.getElementById(
+"videoPassword"
+).value;
+
+if(pw==="magic_comper30"){
+
+document.getElementById(
+"videoLock"
+).style.display="none";
+
+document.getElementById(
+"realVideo"
+).style.display="block";
+
+}
+
+else{
+
+alert("wrong password");
+
+}
+
+}
+
+</script>
 
 </body>
 </html>

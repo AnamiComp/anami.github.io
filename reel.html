@@ -10,6 +10,8 @@ background:#d4d4d4;
 font-family:Arial,sans-serif;
 margin:0;
 padding-top:42px;
+min-height:100vh;
+position:relative;
 }
 
 /* 上固定バー */
@@ -98,8 +100,11 @@ justify-content:center;
 font-weight:900;
 font-size:12px;
 width:fit-content;
-margin:auto;
-margin-top:180px;
+/* 真ん中配置 */
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
 }
 
 .lockbox input{

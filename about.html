@@ -56,7 +56,7 @@ box-sizing:border-box;
 
 .container{
 padding:60px;
-max-width:900px;
+max-width:1100px;
 }
 
 h1{
@@ -68,22 +68,76 @@ margin:0 0 40px;
 line-height:.9;
 }
 
-/* セクション */
-
-.section{
-margin-bottom:50px;
+.profile{
+margin-top:40px;
+margin-bottom:60px;
 }
 
-.label{
-font-size:12px;
+.name{
+font-size:32px;
 font-weight:900;
-margin-bottom:12px;
+margin-bottom:8px;
 }
 
-.text{
+.location{
 font-size:14px;
+margin-bottom:25px;
+}
+
+.contactLinks{
+display:flex;
+gap:20px;
+font-size:14px;
+font-weight:normal;
+}
+
+.contactLinks a{
+color:black;
+text-decoration:none;
+}
+
+.contactLinks a:hover{
+opacity:.6;
+}
+
+.columns{
+display:grid;
+grid-template-columns:1fr 1.4fr;
+gap:120px;
+}
+
+.columnTitle{
+font-size:18px;
 font-weight:900;
+margin-bottom:20px;
+}
+
+.software{
+font-size:16px;
 line-height:1.8;
+}
+
+.experienceItem{
+margin-bottom:30px;
+}
+
+.company{
+font-size:16px;
+font-weight:900;
+}
+
+.date{
+font-size:14px;
+opacity:.7;
+}
+
+@media (max-width:900px){
+
+.columns{
+grid-template-columns:1fr;
+gap:60px;
+}
+
 }
 
 /* リンク */
@@ -131,67 +185,27 @@ color:black;
 
 <h1>ABOUT</h1>
 
-<div class="section">
+<div class="profile">
 
-<div class="label">NAME</div>
-
-<div class="text">
-Sayaka Anami<br>
-Compositor
+<div class="name">
+Sayaka Anami
 </div>
 
+<div class="location">
+Tokyo, Japan
 </div>
 
-<div class="section">
+<div class="contactLinks">
 
-<div class="label">BIO</div>
-
-<div class="text">
-Japan-based VFX Compositor.<br>
-Experienced in feature films,
-episodic series, commercials,
-music videos and live visuals.
-</div>
-
-</div>
-
-<div class="section">
-
-<div class="label">SOFTWARE</div>
-
-<div class="text">
-Nuke<br>
-Mocha Pro<br>
-PTGui<br>
-blender<br>
-Adobe AfterEffects<br>
-Adobe Photoshop<br>
-Adobe Ilustrator<br>
-Adobe PremierPro<br>
-</div>
-
-</div>
-
-<div class="section">
-
-<div class="label">CONTACT</div>
-
-<div class="links">
-
-<a class="linkBtn"
-href="mailto:5ahjt.iiio@gmail.com">
-EMAIL
+<a href="mailto:5ahjt.iiio@gmail.com">
+Email
 </a>
 
-<a class="linkBtn"
-href="https://www.imdb.com/name/nm15386413/?ref_=fn_t_1"
-target="_blank">
+<a href="https://www.imdb.com/name/nm15386413/?ref_=fn_t_1" target="_blank">
 IMDb
 </a>
 
-<a class="linkBtn"
-href="https://www.linkedin.com/in/sayaka-anami-395321282/"
-target="_blank">
+<a href="https://www.linkedin.com/in/sayaka-anami-395321282/" target="_blank">
 LinkedIn
 </a>
 
@@ -199,8 +213,80 @@ LinkedIn
 
 </div>
 
+
+<div class="columns">
+
+<div>
+
+<div class="columnTitle">
+software
 </div>
 
-</body>
+<div class="software">
+Nuke<br>
+Mocha Pro<br>
+Blender<br>
+PTGui<br>
+Adobe After Effects<br>
+Adobe Photoshop<br>
+Adobe Illustrator<br>
+Adobe Premiere Pro
+</div>
 
-</html>
+</div>
+
+
+<div>
+
+<div class="columnTitle">
+experience
+</div>
+
+<div class="experienceItem">
+<div class="company">
+Freelance Compositor – Japanese Broadcasting Corporation
+</div>
+<div class="date">
+Aug 2025 – Present
+</div>
+</div>
+
+<div class="experienceItem">
+<div class="company">
+Freelance Compositor – SiGMa Pixels
+</div>
+<div class="date">
+May 2025 – Present
+</div>
+</div>
+
+<div class="experienceItem">
+<div class="company">
+Freelance Compositor – VISUALMAN TOKYO Co.,Ltd.
+</div>
+<div class="date">
+Mar 2025 – Jul 2025
+</div>
+</div>
+
+<div class="experienceItem">
+<div class="company">
+Freelance Compositor – TICKET:
+</div>
+<div class="date">
+Feb 2025 – Present
+</div>
+</div>
+
+<div class="experienceItem">
+<div class="company">
+Compositor – KASSEN Inc.
+</div>
+<div class="date">
+Apr 2023 – Feb 2025
+</div>
+</div>
+
+</div>
+
+</div>

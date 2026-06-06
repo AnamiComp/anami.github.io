@@ -9,10 +9,11 @@ body{
 background:#d4d4d4;
 font-family:Arial,sans-serif;
 margin:0;
-padding-top:42px;
+padding:0;
 }
 
-/* 上固定バー */
+
+/* 上の黄色バー */
 .topbar{
 background:#f2cf43;
 height:42px;
@@ -25,23 +26,14 @@ padding-right:30px;
 gap:25px;
 font-weight:900;
 font-size:14px;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-box-sizing:border-box;
-z-index:100;
 }
-
 .topbar a{
 color:black;
 text-decoration:none;
 }
-
 .topbar a:hover{
 opacity:.6;
 }
-
 .close{
 width:26px;
 height:26px;
@@ -49,9 +41,10 @@ border:3px solid black;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:22px;
 font-weight:900;
+font-size:22px;
 line-height:.7;
+box-sizing:border-box;
 }
 
 /* 本体 */
